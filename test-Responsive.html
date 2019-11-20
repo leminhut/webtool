@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Am I Responsive?</title>
+  <meta name="description" content="Show off how responsive design looks across different browsers easily with this 4 in 1 viewport tool. See how your site looks on desktop, laptop, ipad & iphone.">
+  <style>
+  .ad {text-align: center; padding: 1em;}
+    @font-face{font-family:'RobotoMedium';src:url("http://ami.responsivedesign.is/fonts/Roboto-Medium-webfont.eot");src:url("http://ami.responsivedesign.is/fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"),url("http://ami.responsivedesign.is/fonts/Roboto-Medium-webfont.woff") format("woff"),url("http://ami.responsivedesign.is/fonts/Roboto-Medium-webfont.ttf") format("truetype"),url("http://ami.responsivedesign.is/fonts/Roboto-Medium-webfont.svg#RobotoMedium") format("svg");font-weight:normal;font-style:normal}body{background-color:#fff;background-image:url("http://ami.responsivedesign.is/images/background.jpg");background-size:100%;background-size:cover;margin-top:20px;font-family:'RobotoMedium';margin:0;padding:0}fieldset{border:none}label{float:left;text-indent:-99999px}input{width:85%;margin-right:1%;height:2em;font-size:1.6em;float:left}h3,dl,dd,dt{margin:1em 2em}h2{margin:1em}dt{font-weight:bold}p{line-height:1.6;margin:1em 2em}p.intro{clear:both}a{color:#ede6dc;text-decoration:none;transition:all 1s ease}a:hover{color:#cc4e46;background-color:#ede6dc}a.button{background-color:#ede6dc;color:#cc4e46;width:8%;line-height:1.7em;margin:0;font-size:2em;text-align:center;float:left;border:solid 1px #8e352e;box-shadow:0 0 3px #333}a.button:hover{background-color:#cc4e46;color:#ede6dc}.promos{background:#fff;width:100%;position:relative;border-top:5px solid;border-bottom:5px solid;margin:2em auto;padding:2em 0}.promos h2{text-align:center;margin-top:0}.ebook{border-right:3px solid}.promos a.button{width:100%;font-size:1.5em;background-color:#cc4e46;color:#ede6dc}.ebook,.bookmarklet{width:49%;float:left}h1{text-transform:uppercase;text-align:center}.wrapper{width:100%;max-width:1300px;margin:0 auto;background:#009688;}.netawards{position:absolute;top:0;right:0;width:125px;height:125px;background-image:url(http://ami.responsivedesign.is/images/NETawards_ribbon.png)}.netawards a{display:block;width:125px;height:125px;text-indent:-999999px}.netawards a:hover{background-color:transparent}.display{position:relative;left:0px;height:750px}.url{float:left;background-color:#cc4e46;width:100%;margin:0 auto;box-shadow:0px -2px 5px #333}form{width:85%;margin:1em auto}div{background-repeat:no-repeat;background-size:100%;overflow:hidden}iframe{transform:scale(0.35);-webkit-transform:scale(0.35);-o-transform:scale(0.35);-ms-transform:scale(0.35);-moz-transform:scale(0.35);transform-origin:top left;-webkit-transform-origin:top left;-o-transform-origin:top left;-ms-transform-origin:top left;-moz-transform-origin:top left;margin:0;padding:0;position:relative;background-color:#fff;border-color:#000}.mobile{background-image:url("https://firebasestorage.googleapis.com/v0/b/photo-e1c6c.appspot.com/o/mobile.png?alt=media&token=e19df304-2c01-49f0-b6fa-b7531b902800");position:absolute;width:200px;height:300px;top:440px;left:220px;z-index:5}.mobile iframe{width:320px;height:450px;top:23px;left:31px;transform:scale(0.425);-webkit-transform:scale(0.425);-o-transform:scale(0.425);-ms-transform:scale(0.425);-moz-transform:scale(0.425);transform-origin:top left;-webkit-transform-origin:top left;-o-transform-origin:top left;-ms-transform-origin:top left;-moz-transform-origin:top left}.tablet{background-image:url("https://firebasestorage.googleapis.com/v0/b/photo-e1c6c.appspot.com/o/tablet.png?alt=media&token=037e6e97-c8d7-4add-8c08-c38139a1bceb");width:380px;height:536px;z-index:3;position:absolute;left:0px;top:200px}.tablet iframe{width:768px;height:1137px;top:48px;left:58px;overflow-y:hidden}.laptop{background-image:url("https://firebasestorage.googleapis.com/v0/b/photo-e1c6c.appspot.com/o/laptop.png?alt=media&token=6db6cf6c-c682-4d4b-90d1-b7c1139c4c22");width:650px;height:399px;top:350px;left:660px;position:absolute;z-index:2}.laptop iframe{width:1280px;height:775px;top:34px;left:88px;transform:scale(0.3617);-webkit-transform:scale(0.3617);-o-transform:scale(0.3617);-ms-transform:scale(0.3617);-moz-transform:scale(0.3617);transform-origin:top left;-webkit-transform-origin:top left;-o-transform-origin:top left;-ms-transform-origin:top left;-moz-transform-origin:top left}.desktop{position:absolute;width:800px;height:722px;background-image:url("https://firebasestorage.googleapis.com/v0/b/photo-e1c6c.appspot.com/o/computer.png?alt=media&token=3b3f9cf9-3eb4-4b23-b10e-e4309a1ce1aa");top:0px;left:160px;z-index:1}.desktop iframe{left:39px;top:40px;width:1600px;height:1044px;transform:scale(0.45);-webkit-transform:scale(0.45);-o-transform:scale(0.45);-ms-transform:scale(0.45);-moz-transform:scale(0.45);transform-origin:top left;-webkit-transform-origin:top left;-o-transform-origin:top left;-ms-transform-origin:top left;-moz-transform-origin:top left}.about-tool{font-size:1.2em;max-width:64em;width:80%;margin:1em auto}.about-tool li{margin-bottom:0.5em;line-height:1.2}@media (max-width: 1300px){.display{width:100%;height:680px;left:-40px;transform:scale(0.75);-webkit-transform:scale(0.75);-o-transform:scale(0.75);-ms-transform:scale(0.75);-moz-transform:scale(0.75)}.desktop{left:100px}.laptop{left:595px}.tablet{left:-60px}.mobile{left:150px}input{width:88%}}@media (max-width: 1070px){.display{left:-70px}}@media (max-width: 1000px){.display{height:600px;left:-115px;transform:scale(0.65);-webkit-transform:scale(0.65);-o-transform:scale(0.65);-ms-transform:scale(0.65);-moz-transform:scale(0.65);top:-40px}.desktop{left:110px}.laptop{left:600px}.tablet{left:-70px}.mobile{left:150px}}@media (max-width: 850px){.display{height:550px;transform:scale(0.6);-webkit-transform:scale(0.6);-o-transform:scale(0.6);-ms-transform:scale(0.6);-moz-transform:scale(0.6)}.desktop{left:80px}.laptop{left:570px}.tablet{left:-60px}.mobile{left:150px}}@media (max-width: 768px){.display{height:500px;transform:scale(0.5);-webkit-transform:scale(0.5);-o-transform:scale(0.5);-ms-transform:scale(0.5);-moz-transform:scale(0.5)}a.button{font-size:1.6em;line-height:1.75em;margin-top:0.5em;width:100%}input{height:1.2em;width:100%}}@media (max-width: 670px){.display{height:450px;left:-140px;transform:scale(0.45);-webkit-transform:scale(0.45);-o-transform:scale(0.45);-ms-transform:scale(0.45);-moz-transform:scale(0.45)}}@media (max-width: 580px){.display{left:-140px;}input{font-size:1.4em;height:1.4em;width:100%}a.button{width:100%;float:left;font-size:1.4em;margin-top:0.5em}}@media (max-width: 560px){.display{left:-130px;height:320px;top:-65px;transform:scale(0.32);-webkit-transform:scale(0.32);-o-transform:scale(0.32);-ms-transform:scale(0.32);-moz-transform:scale(0.32)}}@media (max-width: 440px){.display{left:-17px;top:-65px;width:70px;transform:scale(0.3);-webkit-transform:scale(0.3);-o-transform:scale(0.3);-ms-transform:scale(0.3);-moz-transform:scale(0.3)}}@media (max-width: 380px){.display{height:235px;left:-32px;top:-65px;width:70px;transform:scale(0.23);-webkit-transform:scale(0.23);-o-transform:scale(0.23);-ms-transform:scale(0.23);-moz-transform:scale(0.23)}.desktop{left:100px}.laptop{left:515px}.tablet{left:0px}.mobile{left:180px}h1{font-size:1.2em}p{margin:1em}}
+
+#carbonads { 
+    max-width: 400px; 
+    margin: 1em auto;
+}
+
+/* To position the text beside the image: */
+.carbon-img { 
+    float: left;
+    margin-right:8px; 
+}
+.carbon-text { 
+    display: block; 
+}
+
+/* To position the text below the image: */
+/*
+.carbon-text { 
+    display: block; 
+    width: 130px; 
+}
+*/
+
+/* To separate the attribution from the text: */
+.carbon-poweredby { 
+    float: right; 
+}
+.carbon-text {
+    padding: 8px; 
+}
+
+/* To add a border around the ad: */
+#carbonads { 
+    padding: 15px;
+    border: 1px solid #ccc; 
+}
+
+/* To style the text and attribution: */
+.carbon-text {
+    font-size: 12px;
+    color: orange;
+}
+.carbon-poweredby {
+    font-size: 75%;
+}
+
+/* To fixed position the ad: */
+/*
+#carbonads { 
+    position: fixed; 
+    bottom: 5px;
+    right: 5px;
+}
+*/
+  </style>
+  <!-- IE8 BugFixes thanks to @ingozoell details are  https://github.com/justincavery/am-i-responsive/issues/2?utm_source=buffer&utm_campaign=Buffer&utm_content=buffer8b8d6&utm_medium=twitter -->
+  <!--[if IE 8]>
+<style>
+.desktop iframe {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.3181, M12=0, M21=0, M22=0.3181, SizingMethod='auto expand')";
+}
+.laptop iframe {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.277, M12=0, M21=0, M22=0.277, SizingMethod='auto expand')";
+}
+.tablet iframe {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.234, M12=0, M21=0, M22=0.234, SizingMethod='auto expand')";
+}
+.mobile iframe {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.219, M12=0, M21=0, M22=0.219, SizingMethod='auto expand')";
+}
+</style>
+<![endif]-->
+
+
+<!--[if lte IE 7]>
+<style>
+.desktop iframe {
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.3181,
+    M12=0,
+    M21=0,
+    M22=0.3181,
+    SizingMethod='auto expand');
+}
+.laptop iframe {
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.277,
+    M12=0,
+    M21=0,
+    M22=0.277,
+    SizingMethod='auto expand');
+}
+.tablet iframe {
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.234,
+    M12=0,
+    M21=0,
+    M22=0.234,
+    SizingMethod='auto expand');
+}
+.mobile iframe {
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.219,
+    M12=0,
+    M21=0,
+    M22=0.219,
+    SizingMethod='auto expand');
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30791350-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body class="ami">
+<div class="wrapper">
+<section class="display">
+<div class="mobile">
+  <div class="trim">
+  <iframe id="mobile" src="https://thichnet.blogspot.com">
+  </iframe>
+</div>
+</div>
+
+<div class="tablet">
+  <div class="trim">
+  <iframe id="tablet" src="https://thichnet.blogspot.com">
+  </iframe>
+</div>
+</div>
+<div class="laptop">
+  <div class="trim">
+  <iframe id="laptop" src="https://thichnet.blogspot.com">
+  </iframe>
+</div>
+</div>
+<div class="desktop">
+  <div class="trim">
+  <iframe id="desktop" src="https://thichnet.blogspot.com">
+  </iframe>
+</div>
+</div>
+
+</section>
+</div>
+<section class="url">
+
+<h1>See your site responsive</h1>
+<form id="rwdform" name="rwdform">
+<input type="url" id="url" name="url" value="" placeholder="https://thichnet.blogspot.com">
+
+<a class="button" href="#" onClick="_gaq.push(['_trackEvent', 'RWD', 'URL', document.rwdform.url.value]);" >GO!</a>
+</form>
+
+<div class="about-tool">
+<h2>How it works</h2>
+<ol>
+  <li>Add your URL to the input field</li>
+    <li>Click GO (reloads the preview) or press Enter (reloads the page)</li>
+    <li>Admire your good work</li>
+</ol>
+
+<p>If you're interested there's now a post on <a href="https://surfthedream.com.au/writing/building-am-i-responsive">the process of building Am I Responsive</a> </p>
+
+</div>
+
+</section>
+<script src="http://ami.responsivedesign.is/js/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <script>
+$(document).ready(function() {
+// Change iFrame on a Button Click Event
+    $(".button").click(function(event){
+        $("iframe").attr('src', $( '#url' ).val());
+    });
+});
+  </script>
+  <script>
+$(document).ready(function() {
+    var a = 3;
+    $('.desktop,.laptop,.tablet,.mobile').draggable({
+   start: function(event, ui) { $(this).css("z-index", a++); }
+});
+    $('.display div').click(function() {
+        $(this).addClass('top').removeClass('bottom');
+        $(this).siblings().removeClass('top').addClass('bottom');
+        $(this).css("z-index", a++);
+    });
+});
+</script>
+
+<script>
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+var first = getUrlVars()["url"];
+var first = decodeURIComponent(first);
+var first = first.replace(/\#$/, '');
+if(first === "undefined") {
+  // don't do anything.
+}
+else {
+//  take the url variable and update the iframes and input field
+  $("iframe").attr('src',(first));
+  $('#url').attr('value',(first));
+  $.ajax({ url: 'xtest.php?url=' + first + '',
+           data: {action: first},
+           type: 'post',
+           success: function(output) {
+                        console.log(output);
+                    }
+  });
+}
+</script>
+
+</body>
+</html>
