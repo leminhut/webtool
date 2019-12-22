@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Chuyển nhạc youtube sang mp3, Chuyen nhac youtube sang mp3" /><meta name="keywords" content="Chuyen nhac youtube sang mp3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>
+	Chuyển nhạc youtube sang mp3 miễn phí, tải nhạc mp3 từ youtube nhanh
+</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=0" /><link href="https://x2convert.com/css/bootstrap.min.css?v=19012414" rel="stylesheet" />
+    <link href="https://x2convert.com/vi/download-youtube-to-mp3-music" rel="canonical" type="text/html" />
+    <script src="https://x2convert.com/js/getmp3_v3.js?v=190213"></script>
+    <script>
+        $(document).ready(function () {
+            getLanguage('vi');
+            hashCode = '5952676311558733833';
+            var link = getParameterByName("link");
+            if (link != null && link.length > 0) {
+                var src = getParameterByName("src");
+                $("#txtLink").val(link);
+                checkFile(link, src, true);
+            }
+        });
+    </script>
+</head>
+<body>
+ <header>
+        <div>
+            <nav class="navbar navbar-fixed-top" id="topnav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false"><span class="sr-only">Menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand logo" href="/vi/">X2Convert.com</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="topmenu"><ul class="nav navbar-nav mainmenu" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">
+	<li itemprop="name"><a href="/vi/download-youtube-to-mp3-music" itemprop="url">Tải MP3 từ Youtube</a></li>
+	<li itemprop="name"><a href="/vi/LinkYoutube" itemprop="url">Tải Video</a></li>
+	<li itemprop="name"><a href="/vi/GetLink" itemprop="url">Lấy Link FShare</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right lang-menu"><li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Việt <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://x2convert.com/download-youtube-to-mp3-music" class="">English</a></li><li><a href="https://x2convert.com/vi/download-youtube-to-mp3-music" class="active">Tiếng Việt</a></li><li><a href="https://x2convert.com/de/download-youtube-to-mp3-music" class="">Deutsch</a></li><li><a href="https://x2convert.com/es/download-youtube-to-mp3-music" class="">Español</a></li><li><a href="https://x2convert.com/fr/download-youtube-to-mp3-music" class="">Français</a></li><li><a href="https://x2convert.com/it/download-youtube-to-mp3-music" class="">Italiano</a></li><li><a href="https://x2convert.com/ja/download-youtube-to-mp3-music" class="">日本語</a></li><li><a href="https://x2convert.com/ko/download-youtube-to-mp3-music" class="">한국어</a></li><li><a href="https://x2convert.com/pt/download-youtube-to-mp3-music" class="">Português</a></li><li><a href="https://x2convert.com/ru/download-youtube-to-mp3-music" class="">Русский</a></li><li><a href="https://x2convert.com/th/download-youtube-to-mp3-music" class="">ภาษาไทย</a></li><li><a href="https://x2convert.com/zh/download-youtube-to-mp3-music" class="">中文 (繁體)</a></li></ul></li></ul></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="main" class="container">
+    <div class="form-horizontal col-lg-8 col-lg-offset-2" id="frmGetLink" data-parsley-validate="">
+        <h1 class="center-block text-center tit1">Chuyển nhạc youtube sang mp3</h1>
+        <div class="row">
+            <div class="item form-group"></div>
+            <div class="item form-group">
+                <label class="control-label col-sm-1 col-xs-12" for="txtLink">Link:</label>
+                <div class="col-sm-11 col-xs-12">
+                    <input class="col-xs-12 form-control input-lg" type="url" required="required" id="txtLink" placeholder="Copy và dán link vào đây. Eg: https://www.youtube.com/watch?v=G2YnSLBIcWQ" data-parsley-trim-value="true"/>
+                </div>
+            </div>
+            <div class="item form-group"></div>
+            <div class="item form-group">
+                <button type="button" class="btn btn-lg btn-primary text-center center-block" id="btnGet"><i class="glyphicon glyphicon-download-alt"></i> Get link MP3</button>
+            </div>
+            <div class="item form-group">
+                <div class="col-xs-12">
+                    <div id="msgStatus"></div>
+                    <div class="progress hidden">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                            30%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item form-group">
+                
+            </div>
+            
+        </div>
+        <div class="row" id="videoinfo"></div>
+    </div>
+    <div class="col-xs-12"><p> </p>
+
+<p><span style="font-size:18px;"><strong>Phần mềm quản lý bán hàng Facebook, Comment/Inbox </strong></span><span style="font-size:22px;"><strong><a href="https://codon.vn"><span style="color:#008000;">Có Đơn</span></a></strong></span><span style="font-size:18px;"><strong>, đa tính năng, nhiều tiện ích. Dùng Có đơn miễn phí 30 ngày</strong></span></p>
+
+<p> </p>
+
+<p> </p>
+
+<h3 style="text-align: center;"> </h3>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<h3 style="text-align: center;"> </h3>
+
+<h3 style="text-align: center;"><strong>Mẹo Tải nhanh</strong>:</h3>
+
+<p style="text-align: center;"><span style="font-size:16px;">- <strong>Thêm </strong><span style="color:#FF0000;"><strong>X2</strong></span> <strong>vào link youtube</strong> là cách giúp bạn tải video, nhạc mp3 <strong>nhanh nhất </strong>từ youtube. Ví dụ:</span></p>
+
+<p style="text-align: center;"><img alt="Chuyển nhạc youtube sang mp3 tải về điện thoại" src="https://x2convert.com/images/download-video-mp3-youtube-mobile.gif" style="width: 500px; height: 39px;" /></p>
+
+<p style="text-align: center;"> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<h2><strong>Web Chuyển nhạc youtube sang mp3, tải mp3 từ youtube miễn phí</strong></h2>
+
+<div><strong>X2Convert.Com </strong>nó là một trang web cho phép chuyển đổi video trực tuyến tốt nhất hiện nay, Hỗ trợ chuyển nhạc youtube sang mp3, mp4, webm, M4V, 3GP, sau quá trình chuyển đổi, bạn được phép tải mp3 từ youtube về iphone, samsung, oppo, mizie, zte.., chuyển nhạc từ youtube sang mp3, tai nhac youtube về điện thoại, tải mp3 từ youtube, tải nhạc youtube sang mp3, tải nhạc từ youtube về mp3, chuyển youtube sang mp3. download mp3 từ youtube, youtube converter and youtube downloader.</div>
+
+<div> </div>
+
+<div>x2convert.com cũng là trình chuyển đổi, tải video từ youtube thân thiện với điện thoại và các thiết bị trực tuyến như máy tính laptop, pc, chúng tôi sử dụng đám mây trực tuyến để xử lý dữ liệu theo thời gian thực vì vậy tốc độ chuyển đổi và tải là nhanh nhiều, bảo mật và an toàn.</div>
+
+<div> </div>
+
+<div>Mọi thứ trên x2convert.com được tạo ra là đều miễn phí. Hãy chia sẻ nó ngay.</div>
+
+<div> </div>
+
+<div>Nếu bạn muốn truy cập các website người lớn mới bị chặn thì tham khảo <span style="font-size: 9px;">Cách <a href="https://x2convert.com/vi/cach-vao-xvideos-khi-bi-chan-tai-vietnam-xni8">vào XVideos.com, xnxx.com, pornhub bị chặn</a> tại Việt Nam 2019</span></div>
+
+<div> </div>
+
+<div> </div>
+
+<div> </div>
+
+<div> </div>
+</div>
+</div>
+    <footer><div class="container">
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header"><a class="navbar-brand" href="javascript:void(0)">x2convert.com</a></div>
+
+<ul class="nav navbar-nav">
+	<li><a href="/vi/private-policy-xni5">Chính sách về Quyền riêng tư</a></li>
+	<li><a href="/vi/terms-of-use-xni4">Điều khoản sử dụng</a></li>
+	<li><a href="/vi/contact-us-xni6">Liên hệ</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer>
+</body>
+</html>
