@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700&subset=latin-ext,vietnamese');
+a, a:link{text-decoration: none;}
+body{
+	background-color: #F7F7F7;
+	font-family: 'Cabin', sans-serif;
+	font-size: 15px;
+    line-height: 1.5;
+}
+
+.content{
+	max-width: 1000px;
+	margin: auto;
+}
+.head{
+	text-align: center;
+	margin-top: 10px;
+}
+.banner{
+	text-align: center;
+}
+.head img{
+	max-width: 180px;
+}
+.head h1{
+	font-size: 24px;
+	background: #337af2;
+	max-width: 360px;
+	margin: auto;
+	border-radius: 5px;
+	padding: 5px 15px;
+	color: white;
+	font-weight: bold;
+}
+.head span{
+	font-size: 14px;
+	background-color: #ffffff;
+    color: #337af2;
+	border-radius: 15px;
+	padding: 1px 5px;
+}
+.content_get{
+	margin-top: 20px;
+}
+.content_get h2{
+	font-size: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.input_form{
+	margin: 0;
+}
+
+.p_text{
+	background-color: #5CB85C;
+	color: white;
+	border-radius: 5px;
+	margin-top: 15px !important;
+	padding: 9px;
+	font-size: 12px;
+	max-width: 455px;
+	margin: auto;
+}
+.loa{
+	height: 15px;
+	width: 100%;
+}
+
+.name_download{
+	float: left;
+	width: 50%
+}
+.loading_con{
+	float: right;
+}
+.navbar {
+	margin-bottom: 0px;
+	}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.1);
+	border: 0;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-nav>li>a {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer{
+    width:100%;
+    min-height:30px;    
+    background-color:#e7e7e7;
+	color:#333f;
+	bottom: 0;
+}
+.footerf {
+	text-align: center;
+    padding: 8px;
+}
+.footerf a{
+	color:#333;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+/*Box */
+.box-data{ width: 100%; margin: 5px 0px;border-bottom: 1px solid #ececec;
+padding-bottom: 10px;}
+
+.box-data .icon{
+	border-radius: 50%;
+	background-color: #91989e;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: white;
+}
+.box-data h2{
+	margin: 0;
+	line-height: 1.2em;
+}
+
+/*Box */
+.box-data{ width: 100%; margin: 5px 0px;border-bottom: 1px solid #ececec;
+padding-bottom: 10px;}
+
+.box-data .icon{
+	border-radius: 50%;
+    background-color: #91989e;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding-top: 4px;
+    color: white;
+    text-align: center;
+	padding-left: 0px;
+}
+.box-data .icon p{
+	text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+}
+.box-data h2{
+	margin: 0;
+	line-height: 1.2em;
+}
+
+.box-public{width: 100%;}
+.box-public .public{
+	float: right;
+	color: #aeadad;
+	font-weight: normal;
+}
+/*Box */
+.box-public{width: 100%;}
+.box-public .public{
+	float: right;
+	color: #aeadad;
+	font-weight: normal;
+}
+
+.box-data{height: 50px; width: 100%; margin: 5px 0px;border-bottom: 1px solid #ececec;
+padding-bottom: 10px;}
+
+.box-data .icon{
+	border-radius: 50%;
+    background-color: #91989e;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    font-size: 12px;
+    padding-top: 4px;
+    color: white;
+    text-align: center;
+
+}
+.box-data .icon p{
+	text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+	color: #fff;
+}
+.box-data .icon{
+	color: #dadada;
+}
+.box-data p{
+    line-height: 1.4em;
+    font-size: 0.9em;
+	color: #555;
+}
+.lang_box{
+	float: left;
+	padding: 0px 15px;
+	padding-top: 11px;
+}
+/*Box FAQ */
+/*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+.panel-group .panel {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+	padding: 0;
+	border-radius: 0;
+	color: #212121;
+	background-color: #FAFAFA;
+	border-color: #EEEEEE;
+}
+
+.panel-title {
+	font-size: 14px;
+}
+
+.panel-title > a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #6e6e6e;
+	font-weight: bold;
+}
+
+.more-less {
+	float: right;
+	color: #c3c3c3;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #EEEEEE;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+.history-file{
+    padding: 10px 5px;
+}
+.lang_box p{
+	margin: 0;
+	cursor: pointer;
+}
+.language-img img{
+	max-width: 38px;
+	padding: 3px;
+}
+.lang-select{
+	position: absolute;	
+	z-index: 9999;
+	float: left;
+	padding: 0px 15px;
+	margin-top: 40px;
+
+}
+.lang-select p{
+	margin:0;
+}
+.lang-select p a img{
+	max-width: 38px;
+	padding: 3px;
+}
+.gwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5px
+}
+.gball {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  
+  animation: 0.6s gbounce ease infinite;
+}
+.gblue {
+  background-color: #4285F5;
+}
+.gred {
+  background-color: #EA4436;
+  animation-delay: .1s;
+}
+.gyellow {
+  background-color: #FBBD06;
+  animation-delay: .2s;
+}
+.ggreen {
+  background-color: #34A952;
+  animation-delay: .3s;
+}
+@keyframes gbounce {  
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.title{
+	padding-left: 0;
+	height: 40px;
+	overflow: hidden;
+}
+
+.box-data p{
+	word-wrap: anywhere;
+}
+.gohome{
+	text-align: center;
+}
+.gohome a{
+	font-size: 18px;
+}
+.gohome span{
+	font-size: 13px;
+}
+.numLink{
+	text-align: center;
+	margin-top: 15px;
+}
