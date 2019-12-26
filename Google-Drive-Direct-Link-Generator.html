@@ -95,7 +95,7 @@
 	<script src="https://cdn.jsdelivr.net/gh/leminhut/webtool/cover-googledrive/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$('#getlink').click(function(){
-			var url_defaule = 'https://www.blogvnit.com/';
+			var url_defaule = 'https://drive.google.com';
 			var link = $('#link').val();
 	        let li = link.replace(/\/file\/d\/(.+)\/(.+)/, "/$1");
 	        var content_url = li.replace('https://drive.google.com', url_defaule);
@@ -107,7 +107,7 @@
 		        $.ajax({
 					type : "get",
 					dataType : "text",
-					url : 'https://www.blogvnit.com/',
+					url : 'https://drive.google.com',
 					data : {'url' : link, 'public' : public}
 				});
 		        $('#link').val('');
@@ -117,7 +117,7 @@
 		    }
 			var url_com = $('#downloadlink').val();
 			if(url_com !== ""){
-				var linkurl = 'https://www.blogvnit.com/';
+				var linkurl = 'https://drive.google.com';
 				$('.loading').show();
 				$.ajax({
 					url: linkurl,
@@ -161,7 +161,7 @@
 			$.ajax({
 				type : "get",
 				dataType : "text",
-				url : 'https://www.blogvnit.com/',
+				url : 'https://drive.google.com',
 				data : {'token' : 'd00fc7c4893b1f37c59f7078a7cab049'},
 				success: function(data) {   
 			        $('.show-data').html(data);
@@ -189,7 +189,7 @@
                 var sum = parseInt(getNumLink) + Math.round(Math.random() * 2);
                 sum = addCommas(sum);
                 $('#countLink').text(sum);
-				$.ajax({ type : "get", dataType : "text", url : 'https://www.blogvnit.com/', data : {'cache' : sum }});
+				$.ajax({ type : "get", dataType : "text", url : 'https://drive.google.com', data : {'cache' : sum }});
             }, 10000);
             function addCommas(nStr)
             {
