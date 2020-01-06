@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <meta name="description" content="Upload files and make them available for your friends. Think of it as Pastebin for files. Registration is not required. Large files are supported.">
+        <meta name="author" content="Espen Braastad">
+        <link rel="icon" href="https://filebin.net/static/img/favicon.png">
+
+        <title>Filebin</title>
+
+        
+        <link rel="stylesheet" href="https://filebin.net/static/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://filebin.net/static/css/upload.css"/>
+        <link rel="stylesheet" href="https://filebin.net/static/css/custom.css"/>
+        <link rel="stylesheet" href="https://filebin.net/static/css/font-awesome.css"/>
+
+        <script src="https://filebin.net/static/js/showhide.js"></script>
+        <script src="https://filebin.net/static/js/upload.js"></script>
+        <script>
+            window.onload = function () {
+                if (typeof FileReader == "undefined") alert ("Your browser \
+                    is not supported. You will need to update to a modern \
+                    browser with File API support to upload files.");
+                var fileCount = document.getElementById("fileCount");
+                var fileList = document.getElementById("fileList");
+                var fileDrop = document.body;
+                var fileField = document.getElementById("fileField");
+                var bin = "svp0o4he7rq7nz44";
+                var uploadURL = "https:\/\/filebin.net/";
+                var binURL = "https:\/\/filebin.net/svp0o4he7rq7nz44";
+                FileAPI = new FileAPI(
+                    fileCount,
+                    fileList,
+                    fileDrop,
+                    fileField,
+                    bin,
+                    uploadURL,
+                    binURL
+                );
+                FileAPI.init();
+                
+                fileDrop.ondrop = FileAPI.uploadQueue;
+                
+                fileField.addEventListener("change", FileAPI.uploadQueue)
+            }
+        </script>
+    </head>
+
+    <body id="fileDrop">
+        <div class="container-fluid">
+
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="display-2">
+                        Filebin
+                    </h1>
+                </div>
+            </div>
+
+            
+            <div class="row table-active">
+                <div class="col-sm-12">
+                    <br/>
+                    <p class="lead">
+                        Convenient file sharing on the web, without
+                        registration. Simply upload files and share
+                        the URL. The files will expire automatically
+                        1 week from now.
+                    </p>
+                    <p class="lead">
+                        <strong>1.</strong>
+                        Click <em>Upload files</em> below, or drag and drop the files
+                        into this browser window.
+                    </p>
+                    <p class="lead">
+                        <strong>2.</strong>
+                        Wait until the file uploads complete.
+                    </p>
+                    <p class="lead">
+                        <strong>3.</strong>
+                        Distribute the <a href="https://filebin.net/svp0o4he7rq7nz44">URL</a> to share access to the files.
+                    </p>
+
+                    
+                    <p class="fileUpload btn btn-primary">
+                        <span><i class="fa fa-cloud-upload"></i> Upload files</span>
+                        <input type="file" class="upload" id="fileField" multiple>
+                    </p>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+
+            
+            <span id="fileList"></span>
+
+            
+            <div id="fileCount"></div>
+        </div>
+    </body>
+</html>
