@@ -13,11 +13,10 @@
 <title>Blog Vnit</title>
 </head>
 <body>
-
-
+<div dir="ltr" style="text-align: left;" trbidi="on">
 <center>
 <h2>
-<i class="fa fa-star-o fa-spin" style="color: red;"></i>Vui Lòng Đợi Trong Giây Lát<i class="fa fa-star-o fa-spin" style="color: red;"></i></h2>
+<i class="fa fa-star-o fa-spin" style="color: red;"></i>ĐANG CHUẨN BỊ URL<i class="fa fa-star-o fa-spin" style="color: red;"></i></h2>
 </center>
 <style>
 .khung{margin:0 0 15px;clear:both;border: 3px solid #EE0000;border-radius: 10px 10px 10px 10px;;padding: 8px 2px;}
@@ -43,125 +42,77 @@ text-decoration: none;
 display: inline-block;
 font-size: 16px;
 cursor: pointer;
-
 }
 .footer-credits{display:none;}
 </style>
 <script>
 function getQueryVariable(variable)
 {
-
        var query = window.location.search.substring(1);
-
        var vars = query.split("&");
-
        for (var i=0;i<vars.length;i++) {
-
                var pair = vars[i].split("=");
-
                if(pair[0] == variable){return pair[1];}
-
        }
-
        return(false);
 }
 var time = 15;
-
 var page = getQueryVariable("t");
-
 function countDown(){
-
 time--;
-
 gett("timecount").innerHTML = time;
-
 if(time == -1){
-
 window.location = page;
-
 }
-
 }
-
 function gett(id){
-
 if(document.getElementById) return document.getElementById(id);
-
 if(document.all) return document.all.id;
-
 if(document.layers) return document.layers.id;
-
 if(window.opera) return window.opera.id;
-
 }
-
 function init(){
-
 if(gett('timecount')){
-
 setInterval(countDown, 1000);
-
 gett("timecount").innerHTML = time;
-
 }
-
 else{
-
 setTimeout(init, 50);
-
 }
-
 }
-
 document.onload = init();
-
-
-
 $(document).ready(function(){
-
  $('.link-out-btn').click(function(){
-
     window.location = page;
-
  });
-
  $('#linkout').text(page);
-
 });
-
 </script>
 <script>
 function closeWindow() {
-
         window.open('','_parent','');
-
         window.close();
-
     }
-</script>
-<br />
-<div class='khung'>
+</script> 
+<div class="khung">
 <center>
-<br />
-Bạn vừa <b style="color:#EE0000">Click</b> vào một liên kết không thuộc quyền sở hữu của <b><a href="//blogvnit.com">Blog Vnit</a></b> Mọi thiệt hại gây ra chúng tôi sẽ không chịu trách nhiệm !!!<br />
-Hệ thống sẽ tự động chuyển đến liên kết bạn vừa click sau <b style="color:#EE0000"><span id="timecount"></span></b> giây !<br />
-<b style="color:#188700">Trong lúc chờ đợi hãy click vào ô nhạc bên dưới để thư giãn nào !!!</b>
-<br />
-Liên kết bạn muốn đến: <b style="color:#FF0099"><span id="linkout"></span></b><br />
-<br />
+Hệ Sống <b style="color: #ee0000;">Sẽ Tự Động</b> Chuyển Hướng Bạn Đến Liên Kết , Vui Lòng Đợi <b><a href="https://blogvnit.com/">Blog Vnit</a></b> Kiểm Tra An Toàn URL Và Đưa Bạn Đến Trong <b style="color: #ee0000;"><span id="timecount"></span></b> giây Nữa !
 </center>
+<center>
+<a href="https://bit.ly/353RYM3" target="_blank"><img alt="Chuyển Hướng Website" src="https://1.bp.blogspot.com/-aEvuZM-X6V0/XggLi_3WXFI/AAAAAAAAQY0/AYpNof04lVcXoBqjgj8hcYk-nsQvG8P3ACLcBGAsYHQ/s200/190521_uniper-icons_end-to-end-security.gif" /></a>
+</center>
+<center>
+<a href="https://bit.ly/353RYM3" target="_blank"><img alt="Chuyển Hướng Website" height="149" src="https://i.imgur.com/xYh02h6.gif" width="200" /></a>
+</center>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: justify;">
+Chúng tôi cam kết nội dung trên website chúng tôi đều là tệp , ứng dụng , liên kết sạch 100% nếu có bất kỳ tệp độc hại , viruts , url lừa đảo nào chúng tôi hoàn toàn chịu trách nhiệm , cảm ơn bạn đã tin tưởng blog vnit .</div>
+</div>
 <div style="text-align: center;">
-<button class="link-out-btn" id="button1">Đồng ý</button>
-<button id="button2" onclick="javascript:closeWindow();">Từ chối</button>
 </div>
-<center>
-<audio controls>
-<source src=# />
-</audio>
-</center>
 </div>
-<br />
-<br />
+
+</div>
 
 </body>
 </html>
