@@ -45,6 +45,12 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+<style>
+.button2x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font-size: 13px; font-weight: 700; text-transform: uppercase; color: #FFF !important; background-color: #ffb200 ; margin: 5px; padding: 5px 20px; text-shadow: none; transition: all 1s }
+.button2x:hover { color: #ffb200 !important; background: #fff !important; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
+.button3x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font:14px Roboto; font-weight: 600; text-transform: uppercase; color: #FFF; background: #16da00 ; margin: 15px 0; padding: 10px 20px; text-shadow: none; transition: all 1s }
+.button3x:hover { color:#fff; opacity:0.8 ; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
+</style>
     <style type="text/css">
       body {
         display: flex;
@@ -180,12 +186,7 @@
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-link fa-stack-1x fa-inverse"></i>
             </span>
-            <span class="brand-logo brand-logo-small"
-              >Direct Link Generator</span
-            >
-            <span class="description"
-              >The #1 Google Drive Direct Link Generator</span
-            >
+<a href="https://1.bp.blogspot.com/-lKwUDPWDGNo/XhnDf6_gyFI/AAAAAAAAQa0/bu4Q2N-ivLsaIFtqo84gBJCkTTqri6mGACLcBGAsYHQ/s1600/Cool%2BText%2B-%2BDirect%2BLink%2BGenerator%2B346230170003656.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="55" data-original-width="505" height="21" src="https://1.bp.blogspot.com/-lKwUDPWDGNo/XhnDf6_gyFI/AAAAAAAAQa0/bu4Q2N-ivLsaIFtqo84gBJCkTTqri6mGACLcBGAsYHQ/s200/Cool%2BText%2B-%2BDirect%2BLink%2BGenerator%2B346230170003656.png" width="200" /></a>
           </a>
           <meta itemprop="url" content="http://directlinkgenerator.com/" />
           <meta itemprop="name" content="Direct Link Generator" />
@@ -195,15 +196,15 @@
     <main class="container valign-wrapper">
       <div class="row" id="main">
         <div class="col 12 center" id="title">
-          <h1>The #1 Google Drive Direct Link Generator</h1>
+         
         </div>
         <div class="col s12">
           <form action="#" id="direct-link-form">
             <div class="input-field col s12">
               <textarea id="url" class="materialize-textarea"></textarea>
               <label for="url"
-                >Đặt các liên kết có thể chia sẻ của bạn ở đây (Phải có cài đặt truy cập "Công khai trên web") Tối đa 10 dòng"
-                access settings)</label
+                >Link Google Drive
+          </label
               >
               <span class="max-lines"
                 >Max <span id="max-lines"></span> lines</span
@@ -213,7 +214,7 @@
               <center><button
                 id="submit"
                 type="submit"
-                class="waves-effect waves-light btn blue"
+                class="button2x"
               >
                 Get Direct Link
               </button></center>
@@ -226,9 +227,9 @@
       <ul id="data"></ul>
       <div class="row">
         <div class="col s12 right-align">
-          <button id="copy-btn" class="btn blue" data-clipboard-target="#data">
+          <center><button id="copy-btn" class="button3x" data-clipboard-target="#data">
             Copy to clipboard
-          </button>
+          </button></center>
         </div>
       </div>
     </div>
