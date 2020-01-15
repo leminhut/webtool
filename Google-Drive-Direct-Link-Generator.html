@@ -1,13 +1,8 @@
-
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Google Drive Direct Link Generator</title>
-    <meta
-      name="description"
-      content="The #1 Google Drive direct link generator! Simply paste your shareable link and the tool will generate your Google Drive direct link!"
-    />
     <meta
       name="keywords"
       content="google drive direct link generator, drive direct link, drive link generator, drive, link, generator"
@@ -16,23 +11,6 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Google Drive Direct Link Generator" />
-    <meta
-      property="og:description"
-      content="The #1 Google Drive direct link generator! Simply paste your shareable link and the tool will generate your Google Drive direct link!"
-    />
-    <meta property="og:url" content="https://www.blogvnit.com/" />
-    <meta
-      property="og:site_name"
-      content="Google Drive Direct Link Generator"
-    />
-    <meta
-      property="og:image"
-      content="https://i.imgur.com/UT1w9Pa.jpg"
-   
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/favicon/apple-touch-icon-152x152.png"
-    />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
    <link href='https://i.imgur.com/j8kAISI.png' rel='apple-touch-icon'/>
 <link href='https://i.imgur.com/j8kAISI.png' rel='icon' sizes='32x32' type='image/png'/>
@@ -46,10 +24,41 @@
       href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
     />
 <style>
+.khung{margin:0 0 15px;clear:both;border: 3px solid #EE0000;border-radius: 10px 10px 10px 10px;;padding: 8px 2px;}
+#button1 {
+background-color: #4CAF50;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;}
+#button2 {
+background-color: #008CBA;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+.footer-credits{display:none;}
+</style>
+<style>
 .button2x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font-size: 13px; font-weight: 700; text-transform: uppercase; color: #FFF !important; background-color: #ffb200 ; margin: 5px; padding: 5px 20px; text-shadow: none; transition: all 1s }
 .button2x:hover { color: #ffb200 !important; background: #fff !important; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
 .button3x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font:14px Roboto; font-weight: 600; text-transform: uppercase; color: #FFF; background: #16da00 ; margin: 15px 0; padding: 10px 20px; text-shadow: none; transition: all 1s }
 .button3x:hover { color:#fff; opacity:0.8 ; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
+</style>
+<style>
+.button2x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font-size: 13px; font-weight: 700; text-transform: uppercase; color: #FFF !important; background-color: #ffb200 ; margin: 5px; padding: 5px 20px; text-shadow: none; transition: all 1s }
+.button2x:hover { color: #ffb200 !important; background: #fff !important; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
 </style>
     <style type="text/css">
       body {
@@ -165,16 +174,9 @@
       }
     </style>
   </head>
+
   <body>
-    <!--[if lt IE 7]>
-      <center>
-        <p>
-          You are using an <strong>outdated</strong> browser. Please
-          <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-          your experience.
-        </p>
-      </center>
-    <![endif]-->
+<div class="khung">
     <div class="progress blue lighten-3 hide" id="progress">
       <div class="indeterminate blue"></div>
     </div>
@@ -182,13 +184,11 @@
       <nav class="transparent black-text">
         <div class="nav-wrapper container">
           <a href="https://www.blogvnit.com/" class="">
-            <span class="fa-stack fa-lg valign-top">
+           <center> <span class="fa-stack fa-lg valign-top">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-link fa-stack-1x fa-inverse"></i>
-            </span>
-<a href="https://1.bp.blogspot.com/-lKwUDPWDGNo/XhnDf6_gyFI/AAAAAAAAQa0/bu4Q2N-ivLsaIFtqo84gBJCkTTqri6mGACLcBGAsYHQ/s1600/Cool%2BText%2B-%2BDirect%2BLink%2BGenerator%2B346230170003656.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="55" data-original-width="505" height="21" src="https://1.bp.blogspot.com/-lKwUDPWDGNo/XhnDf6_gyFI/AAAAAAAAQa0/bu4Q2N-ivLsaIFtqo84gBJCkTTqri6mGACLcBGAsYHQ/s200/Cool%2BText%2B-%2BDirect%2BLink%2BGenerator%2B346230170003656.png" width="200" /></a>
-          </a>
-         
+            </span></center>
+       
           <meta itemprop="name" content="Direct Link Generator" />
          
       </nav>
@@ -227,13 +227,13 @@
       <ul id="data"></ul>
       <div class="row">
         <div class="col s12 right-align">
-          <center><button id="copy-btn" class="button3x" data-clipboard-target="#data">
-            Copy to clipboard
+          <center><button id="copy-btn" class="button2x" data-clipboard-target="#data">
+            Copy clipboard
           </button></center>
         </div>
       </div>
     </div>
-   
+   </div>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/leminhut/webtool/cover-googledrive/blogvnit.com.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
@@ -397,4 +397,5 @@
     </script>
   
   </body>
+
 </html>
