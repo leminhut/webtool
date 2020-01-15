@@ -1,0 +1,31 @@
+.khung{margin:0 0 15px;clear:both;border: 3px solid #EE0000;border-radius: 10px 10px 10px 10px;;padding: 8px 2px;}
+#button1 {
+background-color: #4CAF50;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;}
+#button2 {
+background-color: #008CBA;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+.footer-credits{display:none;}
+</style>
+<style>
+.button2x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font-size: 13px; font-weight: 700; text-transform: uppercase; color: #FFF !important; background-color: #ffb200 ; margin: 5px; padding: 5px 20px; text-shadow: none; transition: all 1s }
+.button2x:hover { color: #ffb200 !important; background: #fff !important; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
+.button3x { display: inline-flex; border-radius: 4px; cursor: pointer; border: double #eee; font:14px Roboto; font-weight: 600; text-transform: uppercase; color: #FFF; background: #16da00 ; margin: 15px 0; padding: 10px 20px; text-shadow: none; transition: all 1s }
+.button3x:hover { color:#fff; opacity:0.8 ; box-shadow: 0 0 18px 18px rgba(80, 80, 80, 0) }
